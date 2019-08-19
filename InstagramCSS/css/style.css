@@ -1,0 +1,65 @@
+body{
+    margin: 0%;
+    background: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*el titulo de la página*/
+header .container {
+    background:white;
+    margin: 0;
+    top: 0;
+    padding: 0%;
+    width: 100%;
+    position: fixed;
+}
+
+h1 {
+    text-align:center;
+    padding: 0%;
+}
+.nul{
+    height: 80px;
+}
+
+/*el título de cada post*/
+.post-header div:first-child{
+    display: inline-block;
+    width: 80%;
+}
+.post-header div:last-child{
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+}
+
+
+body .container .post
+{
+background: white;
+max-width: 50%;
+justify-content: center;
+border: 1px solid gray;
+border-radius: 2%;
+margin-left:25%;
+margin-top:8%;
+margin-bottom: 2%; 
+
+ }
+ /*El texto de cada post*/
+body .container .post p{
+    text-align: justify;
+    padding: 15px;  
+}
+/*La imagen de cada post*/
+.post img {
+    width: 100%;
+}
+
+h2 {
+    padding: 5%;
+    margin: 0;
+}
+span {
+padding: 10%;
+}

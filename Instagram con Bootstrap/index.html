@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/Instagram con Bootstrap/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/Instagram con Bootstrap/bootstrap/css/style.css">
+    <link rel="stylesheet" href="/Instagram con Bootstrap/fontawesome/css/all.css">
+    <title>The Instagram Photo Feed (with Bootstrap)</title>
+</head>
+
+<body>    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            
+            <i class="fab fa-instagram"></i>
+            <a class="navbar-brand" href="#" >Instagram</a> 
+ 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                          Create a new post
+                          </button>  
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" 
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cog"></i> </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <ul class="nav nav-pills d-flex justify-content-center mt-5 mb-5" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+            <i class="fas fa-th fa-2x"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+              <i class="fas fa-square fa-2x"></i></a>
+        </li>
+      </ul>
+
+
+      <div class="tab-content" id="pills-tabContent">
+        <!--Aquí comienza la rejilla que se ve al comienzp-->
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="row"> <!--Primera fila de la rejilla-->
+                <div class="card-group">
+                    <div class="card">
+                      <img src="/Instagram con Bootstrap/img/IMG_5712.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                      <img src="/Instagram con Bootstrap/img/IMG_5713.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                      <img src="/Instagram con Bootstrap/img/IMG_5716.jpg" class="card-img-top" alt="...">
+                     </div>
+                  </div>
+            </div> 
+            <div class="row"> <!--Segunda fila de la rejilla-->
+                <div class="card-group">
+                    <div class="card">
+                      <img src="/Instagram con Bootstrap/img/IMG_5752.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                     <!---- <img src="/img/IMG_5742.jpg" class="card-img-top" alt="...">-->
+                      <div class="embed-responsive embed-responsive-16by9">
+                          <iframe class="embed-responsive-item" src="https://youtu.be/FebAk-zOhfw?t=1" allowfullscreen></iframe>
+                        </div>
+                    
+                    </div>
+                    <div class="card">
+                      <img src="/Instagram con Bootstrap/img/IMG_5761.jpg" class="card-img-top" alt="...">
+                     </div>
+                  </div>
+            </div> 
+            <div class="row">  <!--Tercera fila de la rejilla-->
+                <div class="card-group">
+                    <div class="card">
+                      <img src="/Instagram con Bootstrap/img/IMG_5737.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                      <img src="/Instagram con Bootstrap/img/IMG_5721.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                      <img src="/Instagram con Bootstrap/img/IMG_5735.jpg" class="card-img-top" alt="...">
+                     </div>
+                  </div>
+            </div> 
+        </div>
+
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="container">
+        
+                <div class="row">
+                  <div class="col-lg-8 offset-2">
+
+                      <div class="card border-0 mb-3 border border-dark " >
+                          <!--Header de la carte-->
+                          <div class="card-header bg-transparent border-0 d-flex justify-content-between">
+                              <h2> My first Photo  </h2>
+                              <span class="mt-2">1/9</span>
+                          </div>
+                          
+                          <div class="card-img border-0" >
+                              <img src="/Instagram con Bootstrap/img/IMG_5735.jpg" alt="" class="img-fluid" alt="Responsive image">                          </div>
+
+                          <div class="card-body text-success">
+                            <h5 class="card-title" >23 Likes</h5>
+                            <p class="card-text text-body">Vestido de niña, disponible de la talla 2 a la 16.</p>
+                          </div>
+                          <div class="card-footer bg-transparent border-0">
+                            <i class="fa fa-heart fa-2x" style="font-size:16px;color:red" aria-hidden="true"></i>
+                            Comment...
+                          </div>
+                        </div>
+                  </div>
+
+                </div> 
+
+                <div class="row">
+                    <div class="col-lg-8 offset-2">
+  
+                        <div class="card border-0 mb-3 border border-dark " >
+                            <!--Header de la carte-->
+                            <div class="card-header bg-transparent border-0 d-flex justify-content-between">
+                                <h2> My second Photo  </h2>
+                                <span class="mt-2">2/9</span>
+                            </div>
+                            
+                            <div class="card-img border-0" >
+                                <img src="/Instagram con Bootstrap/img/IMG_5713.jpg" alt="" class="img-fluid" alt="Responsive image">                          </div>
+  
+                            <div class="card-body text-success">
+                              <h5 class="card-title" >23 Likes</h5>
+                              <p class="card-text text-body">Vestido de niña, disponible de la talla 2 a la 16.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                              <i class="fa fa-heart fa-2x" style="font-size:16px;color:red" aria-hidden="true"></i>
+                              Comment...
+                            </div>
+                          </div>
+                    </div>
+  
+                  </div> <!--El cierre de la fila -->
+  
+
+
+
+
+
+
+
+
+
+
+
+            </div>  <!--El cierre del tab-->
+        </div> <!--El cierre del tab-->
+      </div>
+
+      
+ <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button type="button" class="btn btn-secondary btn-sm"> <i class="fas fa-camera" aria-hidden="true" ></i></button>
+                <button type="button" class="btn btn-secondary btn-sm"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></button>
+
+
+             
+              
+             
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+      
+    <script src="/Instagram con Bootstrap/bootstrap/js/jquery-3.4.1.js"></script> 
+    <script src="/Instagram con Bootstrap/bootstrap/js/popper.min.js"></script>
+    <script src="/Instagram con Bootstrap/bootstrap/js/bootstrap.min.js"></script>
+
+ 
+</body>
+</html>
